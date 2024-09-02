@@ -1,0 +1,193 @@
+.Container {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+
+
+h2 {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-regular);
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 100px;
+}
+
+.list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.slide {
+    width: 270px;
+    position: relative;
+    z-index: 100;
+    margin-top: 100px;
+}
+
+.wishlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Button {
+    cursor: pointer;
+    color: #000;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 70px;
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.image img {
+    height: fit-content;
+}
+
+.image {
+    height: 150px;
+    background: #F5F5F5;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.image .offer {
+    width: 55px;
+    height: 26px;
+    text-align: center;
+    background: red;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 4px;
+}
+
+.none {
+    display: none;
+}
+
+.image .New {
+    width: 55px;
+    height: 26px;
+    text-align: center;
+    background: green;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 4px;
+}
+
+
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.heart .img {
+    margin: 6px;
+    width: 21px;
+    height: 19px;
+}
+
+.eye {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+}
+
+h5 {
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.captions div {
+    display: flex;
+    gap: 20px;
+}
+
+
+.captions .price {
+    display: flex;
+    gap: 10px;
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(219, 68, 68, 1);
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+
+.captions .stars {
+    display: flex;
+    gap: 5px;
+}
+
+.captions .stars img {
+    width: 20px;
+    height: 20px;
+}
+
+.captions .stars span {
+    text-decoration: none;
+}
+
+.heart .img {
+    width: 30px;
+    height: 30px;
+}
+
+.image p {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+    background: black;
+    color: white;
+    padding: 5px 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.image .remove {
+    background-color: red;
+    color: white;
+}
+
+a:hover::before {
+    width: 0;
+}
+
+@media (max-width: 768px) {
+    .Container {
+        max-width: 400px;
+    }
+    .Container .wishlist {
+        margin-bottom: 30px;
+        margin-top: 100px;
+    }
+    .wishlist h2, .Button {
+        margin: 0;
+    }
+    .list {
+        width: 270px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,248 @@
+.cartPage {
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+.cartPage .title {
+    padding: 20px 60px;
+    border: 1px solid rgb(190, 167, 167);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0 50px 0;
+}
+
+.cartPage>span {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+    line-height: 21px;
+    color: gray;
+}
+
+.cartPage>span>span {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+    line-height: 21px;
+    color: black;
+}
+
+.items {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border: 1px solid rgb(190, 167, 167);
+    border-radius: 4px;
+}
+
+
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.items .product img {
+    width: 54px;
+    height: 54px;
+}
+
+.items h4 {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.cartPage span {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.cancel {
+    position: absolute;
+    top: 13px;
+    left: 50px;
+    display: none;
+}
+
+.items:hover .cancel {
+    display: block;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 5px 15px;
+}
+
+.quantity .arrow {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartPage button {
+    cursor: pointer;
+    color: #000;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 40px;
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.final {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coupon {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.coupon input {
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black ;
+    border-radius: 4px;
+}
+
+
+
+.coupon input::placeholder {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 20px;
+}
+
+.final {
+    display: flex;
+    align-items: flex-start;
+}
+
+.final .apply {
+    margin: 0;
+    color: white;
+    background-color: #DB4444;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.total {
+    width: 422px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+
+    .total {
+        max-width: 350px;
+        margin-top: 30px;
+    }
+    .coupon {
+        max-width: 40ppx;
+        justify-content: space-between;
+    }
+    .coupon input {
+        width: 200px;
+    }
+    .final {
+        flex-direction: column;
+    }
+    .cartPage .title {
+        padding: 10px;
+        margin-top: 30px;
+    }
+    .cartPage {
+        max-width: 400px;
+    }
+    .cartPage .items {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .cartPage .product span {
+        width: 120px;
+    }
+    .cartPage .quantity {
+        padding: 5px 5px;
+        margin: 0 5px;
+    }
+    .buttons button {
+        padding: 10px 20px;
+    }
+}
+
+h6 {
+    font-family: var(--font-family-main);
+    font-weight: var(--font-weight-medium);
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 0 20px 0;
+}
+
+.Price {
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+.final .checkout {
+    width: 100%;
+    margin: 20px auto;
+    color: white;
+    background-color: #DB4444;
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+a:hover::before {
+    width: 0;
+}

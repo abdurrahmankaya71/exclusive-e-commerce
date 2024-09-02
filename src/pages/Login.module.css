@@ -1,0 +1,78 @@
+.Container {
+    display: flex;
+    gap: 150px;
+    width: 1205px;
+    margin-right: auto;
+}
+
+.Container>img {
+    margin-top: 60px;
+}
+
+.Container form {
+    padding: 10px;
+    width: 370px;
+    margin: auto 0;
+}
+
+.Container h1 {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-medium);
+    font-size: 36px;
+    line-height: 30px;
+}
+.Container input {
+    font-size: 16px;
+    line-height: 24px;
+    color:#000;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    outline: none;
+    background: white;
+    width: 350px;
+    margin: 10px 0;
+}
+
+.Container div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Container div p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #DB4444;
+}
+.Container button  {
+    padding: 16px 48px;
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background: #DB4444;
+    cursor: pointer;
+}
+
+.Container p {
+    cursor: pointer;
+}
+
+p a span {
+    border-bottom: 1px solid black;
+    color: #000;
+}
+
+.forgetPassword {
+    color: #DB4444;
+}
+
+@media (max-width: 768px) {
+    .Container {
+        max-width: 400px;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+    }
+}
